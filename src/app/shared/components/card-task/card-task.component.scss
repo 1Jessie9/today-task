@@ -90,3 +90,9 @@
     }
   }
 }
+
+.leaving {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 500ms ease-out, transform 500ms ease-out;
+}

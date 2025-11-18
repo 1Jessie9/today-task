@@ -43,6 +43,7 @@ export class CardTaskComponent {
   public showComplete = signal<boolean>(false);
   public showEdit = signal<boolean>(false);
   public translateX = signal<number>(0);
+  public isShown = signal(false);
   private readonly threshold = 60;
   private readonly maxSwipe = 100;
 
@@ -101,6 +102,7 @@ export class CardTaskComponent {
 
   handleComplete() {
     this.refresh.emit();
+    this.isShown.update((isShown) => !isShown);
     this.taskStore.completeTask(this.task().id);
   }
 
@@ -111,6 +113,7 @@ export class CardTaskComponent {
 
   handleDelete() {
     this.refresh.emit();
+    this.isShown.update((isShown) => !isShown);
     this.taskStore.deleteTask(this.task().id);
   }
 }

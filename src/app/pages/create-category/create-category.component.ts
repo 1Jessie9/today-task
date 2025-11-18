@@ -78,7 +78,6 @@ export class CreateCategoryPage implements OnInit {
       icon: this.selectedIcon()!,
     };
 
-    console.log(payload);
     if (this.categoryId()) {
       const id = Number(this.categoryId());
       this.categoryStore.updateCategory({ ...payload, id: id });

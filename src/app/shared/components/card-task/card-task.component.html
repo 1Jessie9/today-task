@@ -1,4 +1,5 @@
-<div class="card-task">
+@if(!isShown()) {
+<div class="card-task" animate.leave="leaving">
   @if(showComplete()) {
   <div class="card-background complete">
     <div tabindex="0" role="button" class="btn-style complete" (click)="handleComplete()">
@@ -32,3 +33,4 @@
   </div>
   }
 </div>
+}
