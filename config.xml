@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.yesscodes.todotask" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Today Task</name>
+    <name>TodayTask</name>
     <description>Today Task. Todo list for everyone</description>
     <author email="cardenas19yessica@gmail.com" href="http://ionicframework.com/">Yess Codes</author>
     <content src="index.html" />
